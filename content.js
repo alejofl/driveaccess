@@ -19,6 +19,7 @@ chrome.storage.sync.get('number', function(data) {
     var num2 = data.number + 1;
     chrome.storage.sync.set({number: num2});
   } else {
+    chrome.runtime.sendMessage({notif: data.number});
     chrome.storage.sync.set({number: '0'});
   }
 });
