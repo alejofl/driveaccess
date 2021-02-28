@@ -7,10 +7,9 @@ chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.notif != null) {
       chrome.notifications.clear("daNotif");
-      num = request.notif;
-      tries = num.charAt(num.length - 1);
+      tries = request.notif;
       msg = ""
-      if (tries === "1") {
+      if (tries === 1) {
         msg = "Resource accessed after 1 try."
       } else {
         msg = `Resource accessed after ${tries} tries.`

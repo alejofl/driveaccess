@@ -16,10 +16,12 @@ chrome.storage.sync.get('number', function(data) {
     } else {
       window.location.replace(`https://drive.google.com/u/${data.number}/open?id=${videoId}`);
     }
-    var num2 = data.number + 1;
+    var num2 = parseInt(data.number, 10) + 1;
     chrome.storage.sync.set({number: num2});
   } else {
-    chrome.runtime.sendMessage({notif: data.number});
+    if (data.number !== "0") {
+      chrome.runtime.sendMessage({notif: parseInt(data.number) - 1});
+    }
     chrome.storage.sync.set({number: '0'});
   }
 });
