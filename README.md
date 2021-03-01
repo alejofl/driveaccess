@@ -15,3 +15,7 @@ To add a new account to Google Chrome just click on the profile picture in any G
 3. Turn on the Developer Mode, by clicking on the switch on the right top of the page.
 4. Click on "Load Unpacked".
 5. Choose the folder of the extension.
+
+## License
+
+Drive Access by <span property="cc:attributionName">Alejo Flores Lucey</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International
