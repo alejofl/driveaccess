@@ -1,0 +1,17 @@
+# Drive Access
+
+**Drive Access** is a Google Chrome extension that changes accounts automatically, when you don't have permission to open a file or folder.
+
+## How it Works
+
+You just need to have the account added to Chrome, and the extension will do the rest of the work.
+
+To add a new account to Google Chrome just click on the profile picture in any Google tab, click on "Add another account", and follow the onscreen instructions.
+
+## How to Install
+
+1. Download the repository.
+2. In Google Chrome Search Bar, type `chrome://extensions`.
+3. Turn on the Developer Mode, by clicking on the switch on the right top of the page.
+4. Click on "Load Unpacked".
+5. Choose the folder of the extension.
