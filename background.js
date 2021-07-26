@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({number: '0'});
-  chrome.tabs.create({ url: "http://misterflores.com/alejo/driveaccess/"});
+  chrome.tabs.create({ url: "https://alejoforeslucey.github.io/driveaccess/"});
 });
 
 chrome.runtime.onMessage.addListener(
@@ -9,7 +9,9 @@ chrome.runtime.onMessage.addListener(
       chrome.notifications.clear("daNotif");
       tries = request.notif;
       msg = ""
-      if (tries === 1) {
+      if (tries === "err") {
+        msg = "Error accessing resource. Check if the account is logged in."
+      } else if (tries === 1) {
         msg = "Resource accessed after 1 try."
       } else {
         msg = `Resource accessed after ${tries} tries.`
