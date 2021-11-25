@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({number: '0'});
-  chrome.tabs.create({ url: "https://alejoforeslucey.github.io/driveaccess/"});
+  chrome.tabs.create({url: "https://alejofl.github.io/driveaccess/"});
 });
 
 chrome.runtime.onMessage.addListener(
